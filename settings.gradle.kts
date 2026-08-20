@@ -12,11 +12,6 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
-    versionCatalogs {
-        create("libs") {
-            from(files("gradle/libs.versions.toml"))
-        }
-    }
 }
 
 rootProject.name = "SyncParty"
@@ -39,3 +34,4 @@ include(":feature:medialibrary")
 include(":feature:diagnostics")
 
 include(":service:playback")
+
